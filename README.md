@@ -97,7 +97,7 @@ Classification metrics:
 
 ## 📌 Author
 
-ADRIZA SRIVASTAVA
+ADRIZA SRIVASTAVA & 
 AASTHA SINGH
 
 ---
