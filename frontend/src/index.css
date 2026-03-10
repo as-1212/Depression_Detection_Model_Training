@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-surface-deep text-slate-100 antialiased font-body;
+}
+
+.app-shell-bg {
+  background-color: #0b1020;
+  background-image: radial-gradient(
+      circle at 20% 30%,
+      rgba(124, 108, 255, 0.15),
+      transparent 40%
+    ),
+    radial-gradient(circle at 80% 70%, rgba(167, 139, 250, 0.18), transparent 42%);
+}
+
+.card-elevated {
+  @apply bg-surface-soft/95 backdrop-blur-xl shadow-soft border border-slate-800/60;
+}
+
+.card-hover {
+  @apply transition-transform transition-shadow duration-300 ease-out hover:shadow-soft-lg hover:-translate-y-0.5 hover:border-primary/60;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-slate-50 shadow-soft transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary-soft hover:shadow-soft-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-700/70 bg-surface-subtle/70 px-4 py-2 text-xs font-medium text-slate-200 shadow-sm transition duration-200 ease-out hover:border-primary/70 hover:bg-surface-soft/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40;
+}
+
+.textarea-mental {
+  @apply w-full resize-none rounded-2xl border border-slate-800 bg-surface-subtle/90 px-4 py-3.5 text-sm text-slate-100 shadow-inner outline-none transition duration-200 ease-out placeholder:text-slate-500/80 focus:border-primary focus:ring-2 focus:ring-primary/40;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
